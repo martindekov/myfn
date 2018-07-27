@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  examplefn:
+    lang: go
+    handler: ./examplefn
+    image: martindekov/examplefn
+    secrets:
+    - examplefn
